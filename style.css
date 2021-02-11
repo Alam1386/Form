@@ -1,0 +1,43 @@
+html{
+  background-color: teal;
+  color: whitesmoke; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1{
+  letter-spacing: 0.1rem;
+  text-shadow: 2px 2px orange;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+input[type="text"], input[type="email"]{
+  border: solid 1px white; 
+  width: 300px; 
+  padding: 15px; 
+  border-radius: 10px;
+  margin: 15px 0px; 
+  outline: none;
+  font-size: 20px;
+  letter-spacing: 0.05rem;
+}
+input[type="submit"] {
+  padding: 15px 80px; 
+  border-radius: 10px;
+  border: 0; 
+  margin: 25px 0 ;
+  font-size: 20px;
+  letter-spacing: 0.05rem;
+  color: teal;
+  text-shadow: greenyellow 1px 1px;
+}
+label {
+  font-size: 20px;
+  letter-spacing: 0.05rem;
+}
