@@ -1,6 +1,6 @@
 html{
-  background-color: teal;
-  color: whitesmoke; 
+  background-color: rgb(235, 235, 235);
+  color: teal; 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,36 +8,54 @@ html{
 }
 h1{
   letter-spacing: 0.1rem;
-  text-shadow: 2px 2px orange;
+  text-shadow: 2px 2px tan;
 }
 
 .row{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
-input[type="text"], input[type="email"]{
-  border: solid 1px white; 
+input[type="text"], input[type="email"], input[type="password"]{
+  border: solid 1px teal; 
   width: 300px; 
   padding: 15px; 
   border-radius: 10px;
   margin: 15px 0px; 
   outline: none;
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 0.05rem;
 }
 input[type="submit"] {
-  padding: 15px 80px; 
+  cursor: pointer;
+  outline: none;
+  background-color: teal;
+  width: 330px;
+  padding: 15px 0px; 
   border-radius: 10px;
   border: 0; 
-  margin: 25px 0 ;
+  margin: 15px 0 ;
   font-size: 20px;
   letter-spacing: 0.05rem;
-  color: teal;
-  text-shadow: greenyellow 1px 1px;
+  color: whitesmoke;
 }
 label {
   font-size: 20px;
   letter-spacing: 0.05rem;
+}
+#error{
+  color: red; 
+  margin: 5px; 
+  font-size: 16px;
+  letter-spacing: 0.05rem;
+}
+select{
+  border: solid 1px teal; 
+  width: 275px; 
+  padding: 15px; 
+  font-size: 18px;
+  color: teal;
+  border-radius: 10px;
+  margin: 15px;
 }
