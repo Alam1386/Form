@@ -11,28 +11,27 @@
 <body>
   <div class="container">
     <h1>Form Validation in JavaScript</h1>
-    <form action="#" id="form">
-      <div class="row">
+    <form action="#" id="form" method="POST">
+      <div class="row" data-errormsg="">
         <label for="fname">Frist Name </label>
-        <input type="text" id="fname" value="" placeholder="Your first name" data-error="" tabindex="1">
-        <p id="error"></p>
+        <input type="text" id="fname" autofocus placeholder="Your first name" tabindex="1">
       </div>
-      <div class="row">
+      <div class="row" data-errormsg="">
         <label for="lname">Last Name </label>
-        <input type="text" id="lname" value="" placeholder="Your last name" data-error="" tabindex="2">
+        <input type="text" id="lname"  placeholder="Your last name" tabindex="2">
         <p id="error"></p>
       </div>
       <div class="row">
         <label for="email">Email Address </label>
-        <input type="email" id="email" value="" placeholder="Your email address" data-error="" tabindex="3">
+        <input type="email" id="email"  placeholder="Your email address" tabindex="3">
         <p id="error"></p>
       </div>
       <div class="row">
         <label for="password">Password </label>
-        <input type="password" id="password" value="" placeholder="Your password" data-error="" tabindex="4">
+        <input type="password" id="password"  placeholder="Your password" tabindex="4">
         <p id="error"></p>
       </div>
-      <div class="rwo" data-error="">
+      <div class="rwo">
         <label for="age">Age</label>
         <select id="age" tabindex="5">
             <option value="0">Under 20</option>
@@ -43,9 +42,10 @@
         </select>
         <p id="error"></p>
     </div>
-    <div class="form-box" data-errormsg="">
+    <div class="row " data-errormsg="">
       <label for="alive">Alive?</label>
       <input type="checkbox" id="alive" value="yes" tabindex="6" checked />
+      <p id="error"></p>
   </div>
       <div class="row">
         <input type="submit" id="cancel" value="Cancel" tabindex="7">
