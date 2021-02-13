@@ -17,8 +17,7 @@ const send=(e)=>{
       console.log("object", obj); 
       let p = document.createElement('p');
       let field = document.getElementById(obj.inputID); 
-      console.log("Child nodes are; ",  field)
-      let x = field.parentElement.append(p);
+      field.parentElement.append(p);
       p.innerHTML = obj.errorMSG; 
       p.classList.add('error');
       // field.parentElement.setAttribute('data-er', obj.errorMSG);
@@ -32,6 +31,41 @@ const send=(e)=>{
     failures.push({
       inputID: 'fname',
       errorMSG: 'Please add your name.'
+    })
+  }
+  let lname = document.querySelector('#lname'); 
+  if(lname.value === ''){
+    failures.push({
+      inputID: 'lname',
+      errorMSG: 'Please enter your last name.'
+    })
+  }
+  let email = document.querySelector('#email'); 
+  if(email.value === ""){
+    failures.push({
+      inputID: 'email',
+      errorMSG: 'Please type your email address.'
+    })
+  }
+  let password = document.querySelector('#password'); 
+  if(password.value ==="" || password.value.length < 5){
+    failures.push({
+      inputID: 'password',
+      errorMSG: 'Please enter your password. Your password must be more than 5 char'
+    })
+  }
+  let age = document.querySelector('#age'); 
+  if(age.selectedIndex === 0) {
+    failures.push({
+      inputID: 'age',
+      errorMSG: 'Your age should be more than 20 years'
+    })
+  }
+  let alive = document.querySelector('#alive');
+  if(!alive.checked) {
+    failures.push({
+      inputID: 'alive',
+      errorMSG: 'Not checked!'
     })
   }
   return failures; 
