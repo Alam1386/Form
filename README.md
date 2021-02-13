@@ -6,16 +6,14 @@
 
 ### About:
 
-This App getting the data from GitHub Job APIs and displays the jobs available in GitHub Job portal. You can filter the job by description, location and type of job like full time or part time.
+This is a simple form validation in JavaScript where the input data is being processed if they meet the requirement. If anyone of them doesn't meet the criteria, it will be rejected and an error message will appear notifying to enter appropriate data.
 
 Click here to see the App: https://alam1386.github.io/github-jobs/
 ## Technoloogies used:
 
-- React
-- useState Hooks
-- useReducer Hooks
-- Reducer
-- React - Bootstrap
+- JavaScript
+- CSS
+- HTML
 - Git
 
 ## Software used in this Project:
@@ -26,12 +24,11 @@ Click here to see the App: https://alam1386.github.io/github-jobs/
 
 ## How to use it:
 
-- Please download or clone the repository
-- In the App dirctory, run this command (npm install)
+- Download the code and run the index.html file in your browser.
 
 ## Developed by:
 
 Alam Talash
 https://alamtalash.com
 
-#### Date: July 24, 2020
+#### Date: Feb 13, 2021, Burnaby, Ca
